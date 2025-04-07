@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_04_07_115610) do
 
   create_table "task_details", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.uuid "task_id", null: false
-    t.integer "type", null: false
+    t.integer "task_type", null: false
     t.integer "set_count", null: false
     t.datetime "started_at", precision: nil, null: false
     t.datetime "ended_at", precision: nil, null: false
